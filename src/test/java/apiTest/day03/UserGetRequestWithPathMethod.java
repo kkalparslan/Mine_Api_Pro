@@ -40,7 +40,5 @@ public class UserGetRequestWithPathMethod {
         Assert.assertEquals(id, 111);
         Assert.assertEquals(name, "Thomas Eduson");
         Assert.assertEquals(jobName, "Developer");
-
-
     }
 }
