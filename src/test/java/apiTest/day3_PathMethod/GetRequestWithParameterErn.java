@@ -1,4 +1,4 @@
-package apiTest.day03;
+package apiTest.day3_PathMethod;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
