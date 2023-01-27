@@ -1,4 +1,4 @@
-package apiTest.day03;
+package apiTest.day3_PathMethod;
 
 import static io.restassured.RestAssured.*;
 import io.restassured.http.ContentType;
@@ -6,9 +6,6 @@ import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class UserGetRequestWithPathMethod {
 
