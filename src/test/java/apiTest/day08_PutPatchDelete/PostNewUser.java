@@ -19,8 +19,8 @@ public class PostNewUser {
     public void newUser() {
 
         String body = "{\n" +
-                "  \"name\": \"Kemal\",\n" +
-                "  \"email\": \"kem@krafttechexlab.com\",\n" +
+                "  \"name\": \"Kemal1\",\n" +
+                "  \"email\": \"kemal@krafttechexlab.com\",\n" +
                 "  \"password\": \"123\",\n" +
                 "  \"about\": \"About Me\",\n" +
                 "  \"terms\": \"2\"\n" +
@@ -33,6 +33,8 @@ public class PostNewUser {
         String token = response.path("token");
         System.out.println("token = " + token);
         //eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhdXQiOiJhRm0iLCJsaW5rIjoia3JhZnR0ZWNoZXhsYWIuY29tIiwidXNlcmlkIjoiMzM3Iiwic3RhcnQiOjE2NzQ5OTg3MzcsImVuZHMiOjE2NzU2MDM1Mzd9.FqpydmYQ60ncLmVnHxWRs1eohPMmXFQZQ1Mvnlvu2uQimnAI1ItjqwHLfFvIiJALpjVqS1EHitj3pzLQEeKhrQ
+        // new token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhdXQiOiJhRm0iLCJsaW5rIjoia3JhZnR0ZWNoZXhsYWIuY29tIiwidXNlcmlkIjoiMzQzIiwic3RhcnQiOjE2NzUwMjU0MjgsImVuZHMiOjE2NzU2MzAyMjh9.HMjB_SRBr2E2QoEWagQ51qQtd69vtSbnvg-SdOoGiPJAmCpyZ93_AGNIxsMTnTzJbF0IQUSAl-RPDYMb1ZBJ1A
+
     }
 
 

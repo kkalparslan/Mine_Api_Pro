@@ -29,6 +29,7 @@ public class PostEducation {
                 .when()
                 .post("/allusers/register");
         assertEquals(response.statusCode(), 200);
+
         response.prettyPrint();
         String token=response.path("token");
 
@@ -55,9 +56,9 @@ public class PostEducation {
 
     @Test
     public void postNewUserAndVerify(){
-        String name="pink9";
-        String email="pink9@krafttechexlab.com";
-        String password="pink9";
+        String name="pink10";
+        String email="pink10@krafttechexlab.com";
+        String password="pink10";
         String about="structor";
         String terms="4";
 
