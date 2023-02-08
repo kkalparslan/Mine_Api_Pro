@@ -1,6 +1,7 @@
 package apiTest.task.ErenHoca;
 
-import apiTest.task.apiPojoTemples.Students;
+
+import apiTest.task.ErenHoca.apipojotemplates.Students;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
