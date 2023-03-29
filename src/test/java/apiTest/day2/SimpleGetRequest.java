@@ -7,13 +7,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class SimpleGetRequest {
-
     String petStoreURL="https://petstore.swagger.io/v2";
     String exlabURL="https://www.krafttechexlab.com/sw/api/v1"; // burdaki sorgular ödev
 
     @Test
     public void test1(){
-
         Response response = RestAssured.get(petStoreURL+"/store/inventory");
 
         //print status code
@@ -22,7 +20,6 @@ public class SimpleGetRequest {
         // print body
         response.prettyPrint();
     }
-
     @Test
     public void test2(){
         Response response = RestAssured.given().accept(ContentType.JSON)
@@ -32,9 +29,7 @@ public class SimpleGetRequest {
         //response.prettyPrint();
 
         Assert.assertEquals(response.contentType(), "application/json");
-
     }
-
     @Test
     public void test3(){
         // verify yesy case with using Restassured Library
@@ -45,7 +40,6 @@ public class SimpleGetRequest {
                 .and()
                 .contentType("application/json");
     }
-
     @Test
     public void test4(){
 
@@ -55,11 +49,7 @@ public class SimpleGetRequest {
         Assert.assertEquals(response.statusCode(), 200);
         System.out.println("response.body().asString() = " + response.body().asString());
 
-        Assert.assertTrue(response.body().asString().contains("sold")); // key yada value lar değişebilir assert te dikkat etmek gerek
-
-
+        Assert.assertTrue(response.body().asString().contains("sold")); // key yada value lar değişebilir
+        // assert te dikkat etmek gerek
     }
-
-
-
 }
